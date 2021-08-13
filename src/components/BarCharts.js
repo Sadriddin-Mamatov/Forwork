@@ -81,7 +81,7 @@ export default function AreaCharsE() {
           <div>
             <Mis>
               <h4>84%</h4>
-              <as><AiOutlineDownCircle/>-8.0%</as> 
+              <h5><AiOutlineDownCircle/>-8.0%</h5> 
             </Mis>
           <ResponsiveContainer width="80%" aspect={3}>
             <AreaChart

@@ -36,8 +36,8 @@ const Pagination = () => {
                 <img src={carImg} alt="Infiniticar"/>
             </div>
             <div>
-                {Cards.map(card=>(
-                    <CardDiv><span><img src={card.img} alt="champ"/></span>
+                {Cards.map((card, index)=>(
+                    <CardDiv key={index}><span><img src={card.img} alt="champ"/></span>
                         <div>
                         <h3>{card.num}</h3>
                         <p>{card.title}</p>

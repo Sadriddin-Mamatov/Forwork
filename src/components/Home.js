@@ -43,8 +43,8 @@ const Home = () => {
             <TopBar>
                 <input type="search" placeholder={"Search for a race, car or racer"}/>
                     <select value={state} onChange={handleChange}>
-                        {options.map((option) => (
-                        <option value={option.value}>{option.label}</option>
+                        {options.map((option, index) => (
+                        <option key={index} value={option.value}>{option.label}</option>
                         ))}
                     </select>
 

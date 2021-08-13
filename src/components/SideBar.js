@@ -9,12 +9,11 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { StyledMenu, BottomPart, BottomSelect } from "./SideBar.style";
-import Select from "react-select";
+import {Link} from 'react-router-dom'
 
 const SideBar = () => {
   const [value, setValue] = React.useState("motogp2022");
   const [index, setIndex] = React.useState(1);
-  const [selectedOption, setSelectedOption] = useState("killiua");
   const handleChanges = (event) => {
     setValue(event.target.value);
   };
@@ -40,7 +39,6 @@ const SideBar = () => {
   ];
   function handleChange(event) {
     let a = event.target.value;
-    setSelectedOption(a);
     IngIndex(a)
   }
   function IngIndex(value){
@@ -62,52 +60,52 @@ const SideBar = () => {
         <h4>Menu</h4>
         <ul>
           <li>
-            <a href="#">
+            <Link to="/home">
               <span>
                 <AiOutlineHome />
               </span>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/garage">
               <span>
                 <BsGrid />
               </span>
               Garage
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/service">
               <span>
                 <BiCreditCard />
               </span>
               Service Menu
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/racers">
               <span>
                 <BsPeople />
               </span>
               Racers
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/calculators">
               <span>
                 <CgCalculator />
               </span>
               Calculators
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/settings">
               <span>
                 <FiSettings />
               </span>
               Settings
-            </a>
+            </Link>
           </li>
         </ul>
       </StyledMenu>
@@ -139,7 +137,7 @@ const SideBar = () => {
       <BottomSelect>
         <span><img src={options[index-1].img}/></span>
         <div>
-          <select onChange={handleChange} placeholder="Select..">
+          <select  onChange={handleChange}>
             {options.map((item) => (
               <option key={item.id}>{item.label}</option>
             ))}
