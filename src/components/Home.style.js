@@ -62,13 +62,11 @@ export const Rightchart= styled.div`
       width:45%;
       height:220px;
       font-family:"Gilroy-Light",sans-serif, serif;
-      padding:20px;
-   spn{
-     margin-top:90px;
-   }  
+      padding:15px;
+   
    as{
      display:flex;
-     margin-top:110px;
+     margin-top:10px;
        color:#f56;
    }
    div{
@@ -115,9 +113,11 @@ export const Bottom=styled.div`
     align-items:center;
 
 `
-export const Mis=styled.div`
-    // margin-top:70px;
+export const Mis=styled.span`
     display:block; 
+  h4{
+    margin-top:90px !important;
+  }
 `
 export const CardDiv=styled.div`
 width:30%;
