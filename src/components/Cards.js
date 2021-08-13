@@ -30,7 +30,7 @@ const Cards = () => {
     return (
         <Card>
             {cards.map((card, index)=>(
-                <div key={index}><img src={card.img}/><p>{card.name}</p></div>
+                <div key={index}><img src={card.img} alt="dghsg"/><p>{card.name}</p></div>
             ))}
             
         </Card>

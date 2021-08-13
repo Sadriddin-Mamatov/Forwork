@@ -3,11 +3,8 @@ import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
   CartesianGrid,
-  Tooltip,
   ResponsiveContainer,
-  linearGradient
 } from "recharts";
 import {Rightchart,Mis} from "./Home.style"
 import {AiOutlineDownCircle} from "react-icons/ai"

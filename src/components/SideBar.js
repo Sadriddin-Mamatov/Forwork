@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiCreditCard } from "react-icons/bi";
 import { BsGrid, BsPeople } from "react-icons/bs";
@@ -135,7 +135,7 @@ const SideBar = () => {
         </RadioGroup>
       </BottomPart>
       <BottomSelect>
-        <span><img src={options[index-1].img}/></span>
+        <span><img src={options[index-1].img} alt="jsfdvhd"/></span>
         <div>
           <select  onChange={handleChange}>
             {options.map((item) => (

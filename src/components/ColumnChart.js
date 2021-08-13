@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import Chart from 'react-apexcharts';
 import {AiOutlineUpCircle} from "react-icons/ai"
 import {LeftChart, Rate, Part} from "./Home.style";
-import {Box} from "./Home.style";
 const BarCharts=()=> {
-    const [options, setObjects ] = useState({
+    const [options] = useState({
         chart: {
             id: 'apexchart-example'
           },
@@ -12,7 +11,7 @@ const BarCharts=()=> {
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
           }
     });
-    const [series, setSeries]=useState([{
+    const [series]=useState([{
         name: 'series-1',
         data: [20, 40, 10, 50, 45, 90, 60, 30, 40],
 

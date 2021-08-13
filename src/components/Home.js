@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import {BiSearch} from "react-icons/bi";
 import {AiOutlineBell} from 'react-icons/ai';
 import {BsPerson} from 'react-icons/bs';
 import profileImg from "../img/Ellipse 3.png"
