@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Chart from 'react-apexcharts';
-import {LeftChart} from "./Home.style"
+import {AiOutlineUpCircle} from "react-icons/ai"
+import {LeftChart, Rate, Part} from "./Home.style";
+import {Box} from "./Home.style";
 const BarCharts=()=> {
     const [options, setObjects ] = useState({
         chart: {
@@ -18,8 +20,21 @@ const BarCharts=()=> {
 
       return (
           <LeftChart>
-              <span>Racer</span>
-               <Chart options={options} series={series} type="bar" width={400} height={300} />
+              <div>
+                <span>Racer</span>
+                <select>
+                    <option>This Year</option>
+                    <option>Last Year</option>
+                </select>
+              </div>
+              <div>
+                  <Part>
+                    <h4>48%</h4>
+                    <Rate><AiOutlineUpCircle/> +12%</Rate>
+                  </Part>
+                    <Chart options={options} series={series} type="bar" width={400} height={300} />
+              </div>
+              
           </LeftChart>
       )
   }

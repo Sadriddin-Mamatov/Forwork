@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
     width:100%;
     padding-left:12%;
     font-size:16px;
-    font-family:Product Sans;
+    font-family:"Product Sans", sans-serif;
 div{
     display:flex;
     align-items:center;
@@ -25,9 +25,7 @@ h4{
 }
 li {
     list-style-type:none;
-    line-height:35px;
-  
-  
+    line-height:45px;
 }
 a{
     text-decoration:none;
@@ -44,4 +42,30 @@ span{
 export const BottomPart = styled.div`
 width:100%;
 padding-left:12%;
+font-family:"Product Sans", sans-serif;
+h4{
+    color:#3629B7;
+}
+`
+export const BottomSelect=styled.div`
+   
+    border-radius:10px;
+    display:flex;
+    margin-top:20px;
+    justify-content:center;
+    img{
+        border-radius:50%;
+        width:35px;
+        height:35px;
+    }
+select{
+        padding:10px;
+        width:100%;
+        border:none;
+        outline:none;
+    }
+ option{
+        padding:10px;
+        height:100px;
+    }
 `

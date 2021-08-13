@@ -7,6 +7,6 @@ display:flex;
 export const MainStyle=styled.div`
      padding:2%;
      width:20%;
-     height:100vh;
+     height:120vh;
      border:1px solid #ccc;      
 `

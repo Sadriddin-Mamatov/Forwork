@@ -9,8 +9,8 @@ import {
   ResponsiveContainer,
   linearGradient
 } from "recharts";
-import {Rightchart} from "./Home.style"
-
+import {Rightchart,Mis} from "./Home.style"
+import {AiOutlineDownCircle} from "react-icons/ai"
 const data = [
   {
     name: "Jan",
@@ -74,13 +74,15 @@ export default function AreaCharsE() {
           <div>
             <span>Engine Performance</span>
             <select>
-                <option>VSJ</option>
-                <option>hbjs</option>
+                <option>This Year</option>
+                <option>Last Year</option>
             </select>
           </div>
           <div>
-          <span>84%</span>
-           <as>-8.0%</as>   
+            <Mis>
+              <spn>84%</spn>
+              <as><AiOutlineDownCircle/>-8.0%</as> 
+            </Mis>
           <ResponsiveContainer width="80%" aspect={3}>
             <AreaChart
                 width={300}
